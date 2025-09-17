@@ -15,7 +15,7 @@ class BinaryTree:
                 half = int(leng / 2) - 1
             else:
                 half = leng // 2
-            leftSubtree = BinaryTree(elements[:half-1])
+            leftSubtree = BinaryTree(elements[:half])
             root = elements[half]
             rightSubtree = BinaryTree(elements[half+1:])
         elif leng == 2:
